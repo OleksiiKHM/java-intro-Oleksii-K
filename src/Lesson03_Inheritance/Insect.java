@@ -15,6 +15,6 @@ public class Insect {
 
     public void attack() {
         move();
-        System.out.println("Attack");
+        System.out.println("Basic insect attack");
     }
 }

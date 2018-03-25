@@ -21,7 +21,7 @@ public class Bee extends Insect implements Attack_Interface{
         Bee bee = new Bee(12, "yellow", imp);
         bee.attack();
 
-        Bee bee1 = new Bee(15, "red", new Attack_Impl2("sting","fly"));
-        bee1.attack();
+       /* Bee bee1 = new Bee(15, "red", new Attack_Impl2("sting","fly"));
+        bee1.attack();*/
     }
 }

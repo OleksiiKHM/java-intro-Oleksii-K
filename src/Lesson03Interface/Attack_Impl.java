@@ -16,7 +16,9 @@ public class Attack_Impl implements Attack_Interface {
 
     @Override
     public void attack() {
+        System.out.println(move);
         System.out.println(attack);
+
     }
 
 }

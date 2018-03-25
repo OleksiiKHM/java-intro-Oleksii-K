@@ -3,7 +3,8 @@ package Lesson02;
 public class Fibonacci {
 
     public static void main(String[] args) {
-        printFibonacciNumbers(7);
+        //printFibonacciNumbers(5);
+        switchCaseExample('C');
         //System.out.println(printfibonnaciRecursive(4));
 
     }
@@ -38,5 +39,26 @@ public class Fibonacci {
             return fib;
         }
     } */
+
+    public static void switchCaseExample(char grade) {
+        switch (grade) {
+            case 'A':
+                System.out.println("Отлично!");
+                //break;
+            case 'B':
+            case 'C':
+                System.out.println("Отлично выполнено");
+                //break;
+            case 'D':
+                System.out.println("Вы прошли");
+                //break;
+            case 'F':
+                System.out.println("Лучше попробуйте снова");
+                break;
+            default:
+                System.out.println("Неверная оценка");
+        }
+        System.out.println("Ваша оценка " + grade);
+    }
 
 }

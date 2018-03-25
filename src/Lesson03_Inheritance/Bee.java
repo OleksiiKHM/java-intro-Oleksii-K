@@ -5,25 +5,23 @@ public class Bee extends Insect {
         super(size, color);
     }
 
-    public void move() {
-        printFlyExtracted();
-
-    }
-
-    /*public void attack() {
-        //move();
-        printFlyExtracted();
-        super.attack();
+   /* public void move() {
+        System.out.println("Fly");
     }*/
 
-    private void printFlyExtracted() {
-        System.out.println("Fly");
+    public void attack() {
+        move();
+        super.attack();
     }
 
     public static void main(String[] args) {
         Bee bee = new Bee(12, "yellow");
         bee.attack();
+
     }
 
 }
 
+/*private void printFlyExtracted() {
+        System.out.println("Fly");
+    }*/

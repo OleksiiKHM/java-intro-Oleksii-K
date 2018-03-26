@@ -5,6 +5,12 @@ import java.util.Collections;
 
 public class CollectionsHW {
 
+    public static void printArrayContents(ArrayList arrayName){
+        for (Object element: arrayName) {
+            System.out.println(element);
+        }
+    }
+
     public static void main(String[] args) {
         ArrayList<String> names = new ArrayList<>();
 
@@ -16,9 +22,7 @@ public class CollectionsHW {
         names.add("Tom");
 
         System.out.println("Initial state of array:");
-        for (String name : names) {
-            System.out.println(name);
-        }
+        printArrayContents(names);
 
         names.remove("Valera");
 
@@ -30,20 +34,17 @@ public class CollectionsHW {
         }
 
         System.out.println("");
-        System.out.println("Array before sorting:");
-        for (String name : names) {
-            System.out.println(name);
-        }
+        System.out.println("Array after removing and object(sorting to be applied):");
+        printArrayContents(names);
 
         Collections.sort(names);
         System.out.println("");
 
         System.out.println("Array after sorting:");
-        for (String name : names) {
-            System.out.println(name);
-        }
+        printArrayContents(names);
+     }
 
-    }
+
 }
 
 

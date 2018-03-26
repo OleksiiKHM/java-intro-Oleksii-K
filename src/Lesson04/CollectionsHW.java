@@ -42,6 +42,7 @@ public class CollectionsHW {
 
         System.out.println("Array after sorting:");
         printArrayContents(names);
+        //
      }
 
 
